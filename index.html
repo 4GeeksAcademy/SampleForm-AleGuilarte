@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Formulario</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <!-- Titulo de Pagina -->
+        <h1 class="text-center">My Form Alejandro Guilarte</h1>
+        <h3 class="text-center">Cohorte 110</h3>
+        <!-- Tarjeta de Formulario -->
+        <div class="position-absolute top-50 start-50 translate-middle">
+            <div class="card" style="width: 1000px;">
+                <img src="https://picsum.photos/1000/80" class="card-img-top" alt="picsumPhotos"/>
+                <div><!-- Cuerpo del Formulario -->
+                    <h4 class="text-center">Sample Form</h4>
+                    <div class="card-body">
+                        <div><!-- Inf Tarjeta Bancaria -->
+                            <div class="alert alert-danger" role="alert">
+                                Danger alert—check it out!
+                            </div>
+                            <form class="row g-3 needs-validation">
+                                <div class="col-md-6">
+                                    <label for="NumberCard" class="form-label">Number Card</label>
+                                    <input type="number" id="NumberCard" placeholder="XXXX-XXXX-XXXX-XXXX" class="form-control">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="NumberCVC" class="form-label">CVC</label>
+                                    <input type="number" id="NumberCVC" placeholder="XXXX" class="form-control">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="Amount" class="form-label">Amount</label>
+                                    <input type="number" id="Amount" placeholder="€€€€" class="form-control">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="d-flex row g-3"><!-- Informacion Personal -->
+                                <div class="col-md-6">
+                                    <form class="row g-3 needs-validation">
+                                        <div>
+                                            <label for="inputCity" class="form-label">First Name</label>
+                                            <input type="text" class="form-control" id="inputCity">
+                                        </div>
+                                        <div>
+                                            <label for="City" class="form-label">City</label>
+                                            <input type="text" id="City" class="form-control">
+                                        </div>
+                                        <div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard fs-4"></i></label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa fs-4"></i></label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3"><i class="fa-solid fa-money-bill-transfer fs-4"></i></label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3"><i class="fa-solid fa-bitcoin-sign fs-4"></i></label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <form class="row g-3 needs-validation">
+                                        <div>
+                                            <label for="inputCity" class="form-label">Last Name</label>
+                                            <input type="text" class="form-control" id="inputCity">
+                                        </div>
+                                        <!-- AQUI VOY -->
+                                        <div class="d-flex justify-content-between">
+                                            <div class="col-md-6">
+                                                <label for="state" class="form-label">State</label>
+                                                <select id="state" class="form-select"><option>Choose</option></select>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <label for="zip" class="form-label">Postal Code</label>
+                                                <input type="number" id="zip" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            <span>Add any notes here.</span>
+                                        </div>
+                                    </form>
+                                </div>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
+                            <button class="btn btn-primary" type="button">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    </body>
+</html>
